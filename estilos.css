@@ -8,8 +8,7 @@ body {
 .header {
     background: linear-gradient(180deg, #1F5F4A, #2E8B57);
     color: white;
-    padding: 25px 15px;
-    border-radius: 0 0 25px 25px;
+    padding: 25px;
 }
 
 /* CATEGORÍAS */
@@ -17,7 +16,7 @@ body {
     display: flex;
     overflow-x: auto;
     gap: 10px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .cat {
@@ -25,7 +24,6 @@ body {
     padding: 8px 15px;
     border-radius: 20px;
     white-space: nowrap;
-    font-size: 14px;
 }
 
 .cat.active {
@@ -38,45 +36,48 @@ body {
     padding: 10px;
 }
 
-/* CARDS */
+/* GRID */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+@media (min-width: 500px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CARD */
 .card {
-    display: flex;
     background: white;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-/* IMAGEN LADO IZQUIERDO */
 .card img {
-    width: 110px;
-    height: 110px;
+    width: 100%;
+    height: 130px;
     object-fit: cover;
+    border-radius: 12px;
 }
 
-/* INFO */
-.info {
-    padding: 10px;
-    flex: 1;
-}
-
-.info h3 {
-    margin: 0;
-}
-
-.info p {
+.card h3 {
     margin: 5px 0;
-    font-size: 14px;
+}
+
+.card p {
+    font-size: 13px;
 }
 
 .en {
-    font-size: 12px;
     color: gray;
+    font-size: 12px;
 }
 
-/* PRECIO */
-.info span {
+.card span {
     font-weight: bold;
     color: #2E8B57;
 }
