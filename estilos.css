@@ -5,31 +5,32 @@ body {
     background: #F4F1E8;
 }
 
-/* HEADER CON IMAGEN */
+/* 🔥 HEADER PRO (IMAGEN + VERDE BONITO) */
 .header {
-    background: url('img/cenote.jpg') center/cover no-repeat;
-    height: 180px;
+    background: linear-gradient(rgba(31,95,74,0.8), rgba(31,95,74,0.8)),
+                url('img/cenote.jpg') center/cover no-repeat;
+    height: 140px;
     position: relative;
 }
 
+/* TEXTO ENCIMA */
 .overlay {
-    background: rgba(0,0,0,0.4);
     height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .overlay h1 {
     margin: 0;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .overlay p {
-    margin: 5px 0 0;
-    font-size: 14px;
+    margin: 3px 0 0;
+    font-size: 13px;
 }
 
 /* CATEGORÍAS */
@@ -47,6 +48,7 @@ body {
     font-size: 13px;
     cursor: pointer;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .cat.active {
@@ -66,7 +68,7 @@ h2 {
     font-size: 16px;
 }
 
-/* GRID (2 COLUMNAS SIEMPRE) */
+/* GRID */
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -88,7 +90,7 @@ h2 {
     transform: scale(0.97);
 }
 
-/* IMÁGENES (PROPORCIÓN PERFECTA) */
+/* IMAGEN PERFECTA */
 .card img,
 .placeholder {
     width: 100%;
@@ -116,14 +118,14 @@ h2 {
     flex-grow: 1;
 }
 
-/* TITULO PLATILLO */
+/* TITULO */
 .card h3 {
     margin: 5px 0;
     font-size: 14px;
     line-height: 1.2;
 }
 
-/* TITULO EN INGLÉS */
+/* INGLES TITULO */
 .en-title {
     font-size: 11px;
     color: gray;
@@ -136,7 +138,7 @@ h2 {
     margin: 2px 0;
 }
 
-/* DESCRIPCIÓN EN INGLÉS */
+/* INGLES DESC */
 .en {
     font-size: 11px;
     color: #777;
@@ -150,7 +152,7 @@ h2 {
     font-size: 14px;
 }
 
-/* SCROLL BONITO */
+/* SCROLL SUAVE */
 html {
     scroll-behavior: smooth;
 }
