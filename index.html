@@ -14,16 +14,23 @@
     <p>Menú / Menu</p>
 </header>
 
+<!-- CATEGORÍAS -->
+<div class="categories">
+    <div class="cat active">Especialidades</div>
+    <div class="cat">Antojitos</div>
+    <div class="cat">Sopas</div>
+</div>
+
 <div class="container">
 
-<h2>Especialidades</h2>
+<!-- ESPECIALIDADES -->
+<h2 id="sec0">Especialidades</h2>
 <div class="menu">
 
 <div class="card">
 <img src="img/poc-chuc.jpg">
 <h3>Poc Chuc</h3>
-<p>Carne de cerdo con arroz, frijol y tortillas.</p>
-<p class="en">Grilled pork with rice and tortillas.</p>
+<p>Carne de cerdo con arroz y tortillas.</p>
 <span>$160</span>
 </div>
 
@@ -31,10 +38,130 @@
 <img src="img/pechuga-plancha.jpg">
 <h3>Pechuga a la Plancha</h3>
 <p>Con arroz y frijol.</p>
-<p class="en">Grilled chicken with rice.</p>
 <span>$160</span>
 </div>
 
+<div class="card">
+<img src="img/empanizado.jpg">
+<h3>Empanizado</h3>
+<p>Pollo o puerco con arroz.</p>
+<span>$170</span>
+</div>
+
+<div class="card no-img">
+<div class="placeholder">Imagen no disponible</div>
+<h3>Menú Vegetariano</h3>
+<span>$160</span>
+</div>
+
+<div class="card no-img">
+<div class="placeholder">Imagen no disponible</div>
+<h3>Ensalada Yokdzonot</h3>
+<span>$160</span>
+</div>
+
+<div class="card">
+<img src="img/fajitas-pollo.jpg">
+<h3>Fajitas</h3>
+<span>$170</span>
+</div>
+
+</div>
+
+<!-- ANTOJITOS -->
+<h2 id="sec1">Antojitos</h2>
+<div class="menu">
+
+<div class="card">
+<img src="img/panuchos.jpg">
+<h3>Panuchos</h3>
+<span>$110</span>
+</div>
+
+<div class="card">
+<img src="img/salbutes.jpg">
+<h3>Salbutes</h3>
+<span>$110</span>
+</div>
+
+<div class="card">
+<img src="img/empanadas.jpg">
+<h3>Empanadas</h3>
+<span>$110</span>
+</div>
+
+<div class="card">
+<img src="img/quesadillas.jpg">
+<h3>Quesadillas</h3>
+<span>$120</span>
+</div>
+
+<div class="card">
+<img src="img/sopes.jpg">
+<h3>Sopes</h3>
+<span>$120</span>
+</div>
+
+<div class="card no-img">
+<div class="placeholder">Imagen no disponible</div>
+<h3>Nachos</h3>
+<span>$120</span>
+</div>
+
+<div class="card no-img">
+<div class="placeholder">Imagen no disponible</div>
+<h3>Nachos con Pollo</h3>
+<span>$140</span>
+</div>
+
+<div class="card no-img">
+<div class="placeholder">Imagen no disponible</div>
+<h3>Salsa Zikilpac</h3>
+<span>$120</span>
+</div>
+
+<div class="card">
+<img src="img/guacamole.jpg">
+<h3>Guacamole</h3>
+<span>$120</span>
+</div>
+
+</div>
+
+<!-- SOPAS -->
+<h2 id="sec2">Sopas</h2>
+<div class="menu">
+
+<div class="card">
+<img src="img/sopa-lima.jpg">
+<h3>Sopa de Lima</h3>
+<span>$80</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- JS -->
+<script>
+const cats = document.querySelectorAll('.cat');
+const sections = [
+document.getElementById('sec0'),
+document.getElementById('sec1'),
+document.getElementById('sec2')
+];
+
+cats.forEach((cat, index) => {
+cat.addEventListener('click', () => {
+cats.forEach(c => c.classList.remove('active'));
+cat.classList.add('active');
+sections[index].scrollIntoView({ behavior: 'smooth' });
+});
+});
+</script>
+
+</body>
+</html>
 <div class="card">
 <img src="img/empanizado.jpg">
 <h3>Empanizado</h3>
