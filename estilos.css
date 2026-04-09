@@ -5,22 +5,13 @@ body {
     background: #F4F1E8;
 }
 
-/* 🔥 HEADER (SIEMPRE VERDE + IMAGEN OPCIONAL) */
+/* HEADER VERDE */
 .header {
-    background-color: #1F5F4A;
-
-    background-image: 
-        linear-gradient(rgba(31,95,74,0.85), rgba(31,95,74,0.85)),
-        url('img/cenote.jpg');
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    height: 110px;
+    background: linear-gradient(135deg, #2E8B57, #1F5F4A);
+    height: 90px;
 }
 
-/* TEXTO HEADER */
+/* TEXTO */
 .overlay {
     height: 100%;
     color: white;
@@ -32,7 +23,7 @@ body {
 
 .overlay h1 {
     margin: 0;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .overlay p {
@@ -40,18 +31,12 @@ body {
     font-size: 12px;
 }
 
-/* 🔥 CATEGORÍAS (EFECTO APP) */
+/* CATEGORÍAS */
 .categories {
     display: flex;
     gap: 10px;
     padding: 10px;
     overflow-x: auto;
-
-    margin-top: -18px;
-    position: relative;
-    z-index: 2;
-
-    background: #F4F1E8;
 }
 
 /* BOTONES */
@@ -62,8 +47,6 @@ body {
     font-size: 12px;
     white-space: nowrap;
     cursor: pointer;
-    transition: 0.2s;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .cat.active {
@@ -83,7 +66,7 @@ h2 {
     font-size: 15px;
 }
 
-/* GRID 2 COLUMNAS SIEMPRE */
+/* GRID */
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,11 +81,6 @@ h2 {
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 12px rgba(0,0,0,0.08);
-    transition: 0.2s;
-}
-
-.card:active {
-    transform: scale(0.97);
 }
 
 /* IMAGEN */
@@ -115,14 +93,13 @@ h2 {
 
 /* PLACEHOLDER */
 .placeholder {
-    background: linear-gradient(135deg, #dcdcdc, #cfcfcf);
+    background: #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 11px;
     color: #555;
-    padding: 5px;
 }
 
 /* CONTENIDO */
@@ -137,23 +114,20 @@ h2 {
 .card h3 {
     margin: 5px 0;
     font-size: 13px;
-    line-height: 1.2;
 }
 
-/* INGLES TITULO */
+/* INGLES */
 .en-title {
     font-size: 11px;
     color: gray;
-    font-weight: normal;
 }
 
 /* DESCRIPCIÓN */
 .card p {
     font-size: 11px;
-    margin: 2px 0;
 }
 
-/* INGLES */
+/* INGLES DESC */
 .en {
     font-size: 10px;
     color: #777;
@@ -165,9 +139,4 @@ h2 {
     font-weight: bold;
     color: #2E8B57;
     font-size: 13px;
-}
-
-/* SCROLL SUAVE */
-html {
-    scroll-behavior: smooth;
 }
