@@ -1,54 +1,69 @@
 /* RESET */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background: #F4F1E8;
 }
 
-/* 🔥 HEADER PRO (IMAGEN + VERDE BONITO) */
+/* 🔥 HEADER (SIEMPRE VERDE + IMAGEN OPCIONAL) */
 .header {
-    background: linear-gradient(rgba(31,95,74,0.8), rgba(31,95,74,0.8)),
-                url('img/cenote.jpg') center/cover no-repeat;
-    height: 140px;
-    position: relative;
+    background-color: #1F5F4A;
+
+    background-image: 
+        linear-gradient(rgba(31,95,74,0.85), rgba(31,95,74,0.85)),
+        url('img/cenote.jpg');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 110px;
 }
 
-/* TEXTO ENCIMA */
+/* TEXTO HEADER */
 .overlay {
     height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
+    padding: 10px 12px;
 }
 
 .overlay h1 {
     margin: 0;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .overlay p {
-    margin: 3px 0 0;
-    font-size: 13px;
+    margin: 2px 0 0;
+    font-size: 12px;
 }
 
-/* CATEGORÍAS */
+/* 🔥 CATEGORÍAS (EFECTO APP) */
 .categories {
     display: flex;
     gap: 10px;
     padding: 10px;
     overflow-x: auto;
+
+    margin-top: -18px;
+    position: relative;
+    z-index: 2;
+
+    background: #F4F1E8;
 }
 
+/* BOTONES */
 .cat {
     background: white;
-    padding: 8px 15px;
+    padding: 7px 14px;
     border-radius: 20px;
-    font-size: 13px;
-    cursor: pointer;
-    transition: 0.3s;
+    font-size: 12px;
     white-space: nowrap;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 .cat.active {
@@ -65,32 +80,32 @@ body {
 h2 {
     margin: 10px 5px;
     color: #1F5F4A;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-/* GRID */
+/* GRID 2 COLUMNAS SIEMPRE */
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
 }
 
 /* CARD */
 .card {
     background: white;
-    border-radius: 14px;
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    transition: transform 0.2s;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+    transition: 0.2s;
 }
 
 .card:active {
     transform: scale(0.97);
 }
 
-/* IMAGEN PERFECTA */
+/* IMAGEN */
 .card img,
 .placeholder {
     width: 100%;
@@ -102,12 +117,12 @@ h2 {
 .placeholder {
     background: linear-gradient(135deg, #dcdcdc, #cfcfcf);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-size: 12px;
-    color: #555;
+    justify-content: center;
     text-align: center;
+    font-size: 11px;
+    color: #555;
+    padding: 5px;
 }
 
 /* CONTENIDO */
@@ -121,7 +136,7 @@ h2 {
 /* TITULO */
 .card h3 {
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.2;
 }
 
@@ -134,13 +149,13 @@ h2 {
 
 /* DESCRIPCIÓN */
 .card p {
-    font-size: 12px;
+    font-size: 11px;
     margin: 2px 0;
 }
 
-/* INGLES DESC */
+/* INGLES */
 .en {
-    font-size: 11px;
+    font-size: 10px;
     color: #777;
 }
 
@@ -149,7 +164,7 @@ h2 {
     margin-top: auto;
     font-weight: bold;
     color: #2E8B57;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /* SCROLL SUAVE */
