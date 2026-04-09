@@ -9,28 +9,29 @@ body {
 .header {
     background: linear-gradient(135deg, #2E8B57, #1F5F4A);
     height: 90px;
+
+    display: flex; /* 🔥 CLAVE */
+    align-items: center;
+    justify-content: center;
 }
 
-/* TEXTO */
+/* TEXTO HEADER */
 .overlay {
-    height: 100%;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 10px 12px;
 }
 
 .overlay h1 {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .overlay p {
-    margin: 2px 0 0;
+    margin: 3px 0 0;
     font-size: 12px;
+    opacity: 0.9;
 }
 
 /* CATEGORÍAS */
