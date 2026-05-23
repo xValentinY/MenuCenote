@@ -3,223 +3,332 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Menu digital del Cenote Yokdzonot con platillos, precios e imagenes optimizadas para movil.">
 <title>Cenote Yokdzonot</title>
 <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+<div class="page-shell">
+    <header class="hero">
+        <div class="hero-backdrop"></div>
+        <div class="hero-copy">
+            <p class="eyebrow">Cocina yucateca junto al cenote</p>
+            <h1>Cenote Yokdzonot</h1>
+            <p class="hero-text">Un menu pensado para abrir rapido desde QR, verse bien en celular y dejar que las fotos hagan el trabajo.</p>
+            <div class="hero-pills">
+                <span>Menu bilingue</span>
+                <span>Ideal para celular</span>
+                <span>Imagenes ligeras</span>
+            </div>
+        </div>
+    </header>
 
-<header class="header">
-    <div class="overlay">
-        <h1>🌿 Cenote Yokdzonot</h1>
-        <p>Menú / Menu</p>
-    </div>
-</header>
+    <nav class="categories" aria-label="Categorias del menu">
+        <button class="cat active" data-target="sec0" type="button">Especialidades</button>
+        <button class="cat" data-target="sec1" type="button">Antojitos</button>
+        <button class="cat" data-target="sec2" type="button">Sopas</button>
+    </nav>
 
-<div class="categories">
-    <div class="cat active">🍽️ Especialidades</div>
-    <div class="cat">🌮 Antojitos</div>
-    <div class="cat">🍲 Sopas</div>
-</div>
+    <main class="container">
+        <section class="menu-section" aria-labelledby="sec0">
+            <div class="section-heading">
+                <p class="section-kicker">Sabores de la casa</p>
+                <h2 id="sec0">Especialidades</h2>
+                <p class="section-subtitle">Platos fuertes con guarniciones tradicionales y tortillas hechas a mano.</p>
+            </div>
 
-<div class="container">
+            <div class="menu">
+                <article class="card featured">
+                    <img src="img/pooc-chuc.webp" alt="Poc chuc servido con guarniciones" loading="eager" fetchpriority="high" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Especialidad</span>
+                            <span class="price">$180</span>
+                        </div>
+                        <h3>Poc Chuc</h3>
+                        <p class="en-title">Grilled Pork</p>
+                        <p>Carne de cerdo con arroz, frijol, cebolla, salsa de tomate y tortillas hechas a mano.</p>
+                        <p class="en">Grilled pork with rice, beans, onion, tomato sauce and handmade tortillas.</p>
+                    </div>
+                </article>
 
-<!-- ESPECIALIDADES -->
-<h2 id="sec0">🍽️ Especialidades / Main Dishes</h2>
-<div class="menu">
+                <article class="card">
+                    <img src="img/pechuga-plancha.webp" alt="Pechuga a la plancha con arroz y frijoles" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Clasico</span>
+                            <span class="price">$180</span>
+                        </div>
+                        <h3>Pechuga a la Plancha</h3>
+                        <p class="en-title">Grilled Chicken Breast</p>
+                        <p>Servida con arroz, frijol, salsa de tomate y tortillas hechas a mano.</p>
+                        <p class="en">Grilled chicken breast served with rice, beans, tomato sauce and handmade tortillas.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<img src="img/pooc-chuc.jpg">
-<div class="card-content">
-<h3>Poc Chuc <br><span class="en-title">Grilled Pork</span></h3>
-<p>Carne de cerdo con arroz, frijol, cebolla, salsa de tomate y tortillas hechas a mano.</p>
-<p class="en">Grilled pork with rice, beans, onion, tomato sauce and handmade tortillas.</p>
-<span>$180</span>
-</div>
-</div>
+                <article class="card">
+                    <img src="img/empanizado.webp" alt="Empanizado de pollo o puerco" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Crujiente</span>
+                            <span class="price">$190</span>
+                        </div>
+                        <h3>Empanizado de Pollo o Puerco</h3>
+                        <p class="en-title">Breaded Chicken or Pork</p>
+                        <p>Acompañado de arroz, frijol y tortillas hechas a mano.</p>
+                        <p class="en">Breaded chicken or pork served with rice, beans and handmade tortillas.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<img src="img/pechuga-plancha.jpg">
-<div class="card-content">
-<h3>Pechuga a la Plancha <br><span class="en-title">Grilled Chicken Breast</span></h3>
-<p>Servida con arroz, frijol, salsa de tomate y tortillas hechas a mano.</p>
-<p class="en">Grilled chicken breast served with rice, beans, tomato sauce and handmade tortillas.</p>
-<span>$180</span>
-</div>
-</div>
+                <article class="card">
+                    <img src="img/menu-vegetariano.webp" alt="Menu vegetariano con verduras y arroz" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Vegetariano</span>
+                            <span class="price">$180</span>
+                        </div>
+                        <h3>Menú Vegetariano</h3>
+                        <p class="en-title">Vegetarian Dish</p>
+                        <p>Soufflé de verduras con queso, crema y guarnición.</p>
+                        <p class="en">Vegetable soufflé with cheese, cream and garnish.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<img src="img/empanizado.jpg">
-<div class="card-content">
-<h3>Empanizado de Pollo o Puerco <br><span class="en-title">Breaded Chicken or Pork</span></h3>
-<p>Acompañado de arroz, frijol y tortillas hechas a mano.</p>
-<p class="en">Breaded chicken or pork served with rice, beans and handmade tortillas.</p>
-<span>$190</span>
-</div>
-</div>
+                <article class="card">
+                    <img src="img/ensalada-yokdzonot.webp" alt="Ensalada Yokdzonot con tomate, cebolla y pollo" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Fresco</span>
+                            <span class="price">$180</span>
+                        </div>
+                        <h3>Ensalada Yokdzonot</h3>
+                        <p class="en-title">Yokdzonot Salad</p>
+                        <p>Lechuga, jitomate, cebolla con pollo o puerco.</p>
+                        <p class="en">Lettuce, tomato, onion with chicken or pork.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<div class="placeholder">🌿<br>Vegetariano</div>
-<div class="card-content">
-<h3>Menú Vegetariano <br><span class="en-title">Vegetarian Dish</span></h3>
-<p>Soufflé de verduras con queso, crema y guarnición.</p>
-<p class="en">Vegetable soufflé with cheese, cream and garnish.</p>
-<span>$180</span>
-</div>
-</div>
+                <article class="card">
+                    <img src="img/fajitas-pollo.webp" alt="Fajitas de pollo con guarniciones" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Favorito</span>
+                            <span class="price">$190</span>
+                        </div>
+                        <h3>Fajitas de Pollo</h3>
+                        <p class="en-title">Chicken Fajitas</p>
+                        <p>Pechuga de pollo con arroz, frijol y tortillas hechas a mano.</p>
+                        <p class="en">Chicken breast with rice, beans and handmade tortillas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="card">
-<div class="placeholder"><br>Imagen no Disponible</div>
-<div class="card-content">
-<h3>Ensalada Yokdzonot <br><span class="en-title">Yokdzonot Salad</span></h3>
-<p>Lechuga, jitomate, cebolla con pollo o puerco.</p>
-<p class="en">Lettuce, tomato, onion with chicken or pork.</p>
-<span>$180</span>
-</div>
-</div>
+        <section class="menu-section" aria-labelledby="sec1">
+            <div class="section-heading">
+                <p class="section-kicker">Para compartir o pedir rapido</p>
+                <h2 id="sec1">Antojitos</h2>
+                <p class="section-subtitle">Sabores ligeros, crujientes y muy antojables para cualquier hora.</p>
+            </div>
 
-<div class="card">
-<img src="img/fajitas-pollo.jpg">
-<div class="card-content">
-<h3>Fajitas de Pollo <br><span class="en-title">Chicken Fajitas</span></h3>
-<p>Pechuga de pollo con arroz, frijol y tortillas hechas a mano.</p>
-<p class="en">Chicken breast with rice, beans and handmade tortillas.</p>
-<span>$190</span>
-</div>
-</div>
+            <div class="menu">
+                <article class="card featured">
+                    <img src="img/panuchos.webp" alt="Panuchos yucatecos" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Tradicional</span>
+                            <span class="price">$120</span>
+                        </div>
+                        <h3>Panuchos</h3>
+                        <p class="en-title">Stuffed Tortilla</p>
+                        <p>Tortilla rellena de frijol con pollo y cebolla.</p>
+                        <p class="en">Stuffed tortilla with beans, chicken and onion.</p>
+                    </div>
+                </article>
 
-</div>
+                <article class="card">
+                    <img src="img/salbutes.webp" alt="Salbutes con pollo, lechuga y tomate" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Suave</span>
+                            <span class="price">$120</span>
+                        </div>
+                        <h3>Salbutes</h3>
+                        <p class="en-title">Fried Tortilla</p>
+                        <p>Tortilla frita con pollo, lechuga y tomate.</p>
+                        <p class="en">Fried tortilla with chicken, lettuce and tomato.</p>
+                    </div>
+                </article>
 
-<!-- ANTOJITOS -->
-<h2 id="sec1">🌮 Antojitos / Snacks</h2>
-<div class="menu">
+                <article class="card">
+                    <img src="img/empanadas.webp" alt="Empanadas rellenas de pollo o queso" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Rellenas</span>
+                            <span class="price">$120</span>
+                        </div>
+                        <h3>Empanadas</h3>
+                        <p class="en-title">Empanadas</p>
+                        <p>Empanadas rellenas de pollo o queso.</p>
+                        <p class="en">Empanadas filled with chicken or cheese.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<img src="img/panuchos.jpg">
-<div class="card-content">
-<h3>Panuchos <br><span class="en-title">Stuffed Tortilla</span></h3>
-<p>Tortilla rellena de frijol con pollo y cebolla.</p>
-<p class="en">Stuffed tortilla with beans, chicken and onion.</p>
-<span>$120</span>
-</div>
-</div>
+                <article class="card">
+                    <img src="img/quesadillas.webp" alt="Quesadillas con tortilla de harina o maiz" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Queso</span>
+                            <span class="price">$130</span>
+                        </div>
+                        <h3>Quesadillas</h3>
+                        <p class="en-title">Quesadillas</p>
+                        <p>Tortilla de harina o maíz con queso.</p>
+                        <p class="en">Flour or corn tortilla with cheese.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<img src="img/salbutes.jpg">
-<div class="card-content">
-<h3>Salbutes <br><span class="en-title">Fried Tortilla</span></h3>
-<p>Tortilla frita con pollo, lechuga y tomate.</p>
-<p class="en">Fried tortilla with chicken, lettuce and tomato.</p>
-<span>$120</span>
-</div>
-</div>
+                <article class="card">
+                    <img src="img/sopes.webp" alt="Sopes con frijol, queso y carne" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Casero</span>
+                            <span class="price">$130</span>
+                        </div>
+                        <h3>Sopes</h3>
+                        <p class="en-title">Sopes</p>
+                        <p>Tortilla gruesa con frijol, queso y carne.</p>
+                        <p class="en">Thick tortilla with beans, cheese and meat.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<img src="img/empanadas.jpg">
-<div class="card-content">
-<h3>Empanadas <br><span class="en-title">Empanadas</span></h3>
-<p>Empanadas rellenas de pollo o queso.</p>
-<p class="en">Empanadas filled with chicken or cheese.</p>
-<span>$120</span>
-</div>
-</div>
+                <article class="card">
+                    <div class="placeholder">
+                        <span>Foto pendiente</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Para compartir</span>
+                            <span class="price">$130</span>
+                        </div>
+                        <h3>Nachos</h3>
+                        <p class="en-title">Nachos</p>
+                        <p>Nachos con frijol y queso.</p>
+                        <p class="en">Nachos with beans and cheese.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<img src="img/quesadillas.jpg">
-<div class="card-content">
-<h3>Quesadillas <br><span class="en-title">Quesadillas</span></h3>
-<p>Tortilla de harina o maíz con queso.</p>
-<p class="en">Flour or corn tortilla with cheese.</p>
-<span>$130</span>
-</div>
-</div>
+                <article class="card">
+                    <img src="img/nachos-poll.webp" alt="Nachos con pollo" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Con pollo</span>
+                            <span class="price">$150</span>
+                        </div>
+                        <h3>Nachos con Pollo</h3>
+                        <p class="en-title">Chicken Nachos</p>
+                        <p>Nachos acompañados con pollo.</p>
+                        <p class="en">Nachos served with chicken.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<img src="img/sopes.jpg">
-<div class="card-content">
-<h3>Sopes <br><span class="en-title">Sopes</span></h3>
-<p>Tortilla gruesa con frijol, queso y carne.</p>
-<p class="en">Thick tortilla with beans, cheese and meat.</p>
-<span>$130</span>
-</div>
-</div>
+                <article class="card">
+                    <div class="placeholder">
+                        <span>Foto pendiente</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Dip regional</span>
+                            <span class="price">$140</span>
+                        </div>
+                        <h3>Salsa Zikilpac</h3>
+                        <p class="en-title">Pumpkin Seed Dip</p>
+                        <p>Jitomate asado con pepita de calabaza.</p>
+                        <p class="en">Roasted tomato with pumpkin seed dip.</p>
+                    </div>
+                </article>
 
-<div class="card">
-<div class="placeholder"><br>Imagen no Disponible</div>
-<div class="card-content">
-<h3>Nachos <br><span class="en-title">Nachos</span></h3>
-<p>Nachos con frijol y queso.</p>
-<p class="en">Nachos with beans and cheese.</p>
-<span>$130</span>
-</div>
-</div>
+                <article class="card">
+                    <img src="img/guacamoles.webp" alt="Guacamole tradicional" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Fresco</span>
+                            <span class="price">$140</span>
+                        </div>
+                        <h3>Guacamole</h3>
+                        <p class="en-title">Guacamole</p>
+                        <p>Guacamole tradicional.</p>
+                        <p class="en">Traditional guacamole.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="card">
-<img src="img/nachos-poll.jpg">
-<div class="card-content">
-<h3>Nachos con Pollo <br><span class="en-title">Chicken Nachos</span></h3>
-<p>Nachos acompañados con pollo.</p>
-<p class="en">Nachos served with chicken.</p>
-<span>$150</span>
-</div>
-</div>
+        <section class="menu-section" aria-labelledby="sec2">
+            <div class="section-heading">
+                <p class="section-kicker">Caldito con identidad</p>
+                <h2 id="sec2">Sopas</h2>
+                <p class="section-subtitle">Una opcion reconfortante para cerrar la experiencia con sabor yucateco.</p>
+            </div>
 
-<div class="card">
-<div class="placeholder"><br>Imagen no Disponible</div>
-<div class="card-content">
-<h3>Salsa Zikilpac <br><span class="en-title">Pumpkin Seed Dip</span></h3>
-<p>Jitomate asado con pepita de calabaza.</p>
-<p class="en">Roasted tomato with pumpkin seed dip.</p>
-<span>$140</span>
-</div>
-</div>
-
-<div class="card">
-<img src="img/guacamoles.jpg">
-<div class="card-content">
-<h3>Guacamole <br><span class="en-title">Guacamole</span></h3>
-<p>Guacamole tradicional.</p>
-<p class="en">Traditional guacamole.</p>
-<span>$140</span>
-</div>
-</div>
-
-</div>
-
-<!-- SOPAS -->
-<h2 id="sec2">🍲 Sopas / Soups</h2>
-<div class="menu">
-
-<div class="card">
-<img src="img/sopa-lima.jpg">
-<div class="card-content">
-<h3>Sopa de Lima <br><span class="en-title">Yucatecan Lime Soup</span></h3>
-<p>Tradicional sopa yucateca.</p>
-<p class="en">Traditional Yucatecan lime soup.</p>
-<span>$100</span>
-</div>
-</div>
-
-</div>
-
+            <div class="menu menu-single">
+                <article class="card featured">
+                    <img src="img/sopa-lima.webp" alt="Sopa de lima tradicional yucateca" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <div class="card-topline">
+                            <span class="tag">Tradicion</span>
+                            <span class="price">$100</span>
+                        </div>
+                        <h3>Sopa de Lima</h3>
+                        <p class="en-title">Yucatecan Lime Soup</p>
+                        <p>Tradicional sopa yucateca.</p>
+                        <p class="en">Traditional Yucatecan lime soup.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 </div>
 
 <script>
 const cats = document.querySelectorAll('.cat');
-const sections = [
-document.getElementById('sec0'),
-document.getElementById('sec1'),
-document.getElementById('sec2')
-];
+const sections = [...document.querySelectorAll('.menu-section')];
 
-cats.forEach((cat, index) => {
-cat.addEventListener('click', () => {
-cats.forEach(c => c.classList.remove('active'));
-cat.classList.add('active');
-sections[index].scrollIntoView({ behavior: 'smooth' });
+function setActiveSection(id) {
+  cats.forEach((cat) => {
+    cat.classList.toggle('active', cat.dataset.target === id);
+  });
+}
+
+cats.forEach((cat) => {
+  cat.addEventListener('click', () => {
+    const target = document.getElementById(cat.dataset.target);
+    setActiveSection(cat.dataset.target);
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 });
-});
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+    if (visible) {
+      const heading = visible.target.querySelector('h2');
+      if (heading) {
+        setActiveSection(heading.id);
+      }
+    }
+  },
+  {
+    threshold: [0.35, 0.6],
+    rootMargin: '-20% 0px -45% 0px'
+  }
+);
+
+sections.forEach((section) => observer.observe(section));
 </script>
-
 </body>
 </html>
